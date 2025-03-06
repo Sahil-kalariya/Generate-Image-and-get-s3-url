@@ -42,41 +42,40 @@ This project demonstrates how to generate images using Amazon Bedrock's Titan Im
     ]
   }
 
-# 🚀 Run This Script  
+🚀 Run This Script
 
-Follow these simple steps to get the project up and running locally.  
+Follow these simple steps to get the project up and running locally.
 
-### 1. Clone the Repository  
-```bash
+🛠 Setup
+
+1. Clone the Repository
+
 git clone <repo-url>
 cd <repo-folder>
-```
 
-### 2. Create a Virtual Environment  
-```bash
+2. Create a Virtual Environment
+
 python -m venv venv
-```
 
-### 3. Activate the Virtual Environment  
-- **On Windows:**  
-  ```bash
-  venv\Scripts\activate
-  ```
-- **On macOS/Linux:**  
-  ```bash
-  source venv/bin/activate
-  ```
+3. Activate the Virtual Environment
 
-### 4. Install Dependencies  
-```bash
+On Windows:
+
+venv\Scripts\activate
+
+On macOS/Linux:
+
+source venv/bin/activate
+
+4. Install Dependencies
+
 pip install -r requirements.txt
-```
 
-## ▶️ Run the Script  
-```bash
+▶️ Run the Script
+
 python main.py
-```
 
-That's it! Your script should now be running. 🎉
+⚠️ Important: Update Your S3 Bucket Name
 
+Before running the script, make sure to update the S3 bucket name in the code to match your actual bucket.
 
