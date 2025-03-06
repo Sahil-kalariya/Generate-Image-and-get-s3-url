@@ -1,26 +1,25 @@
-# Image Generation & Storage with Amazon Bedrock and S3
-
+# What is project about
 This project demonstrates how to generate images using Amazon Bedrock's Titan Image Generator model, store the generated images in an Amazon S3 bucket, and return a publicly accessible URL for the uploaded image.
 
 ---
 
 ## 📋 Prerequisites
 
-1. **AWS Account**: 
+1. **AWS Account**:  
    - Access to the `amazon.titan-image-generator-v1` model in the `us-east-1` region.
-   - **IAM User**: 
+   - **IAM User**:  
      - Permissions for Amazon Bedrock and S3 (full access recommended for testing).
      - Access key and secret key configured via AWS CLI.
 
-2. **AWS CLI**: 
+2. **AWS CLI**:  
    - [Installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and configured with `aws configure`.
 
-3. **Python 3.7+**: 
+3. **Python 3.7+**:  
    - Ensure Python and `venv` are installed.
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠 Setup Instructions
 
 ### 1. Configure S3 Bucket Permissions
 - **Disable Block Public Access**:
@@ -41,41 +40,45 @@ This project demonstrates how to generate images using Amazon Bedrock's Titan Im
         }
     ]
   }
+  ```
 
-🚀 Run This Script
+## 🚀 Run This Script  
 
-Follow these simple steps to get the project up and running locally.
+Follow these simple steps to get the project up and running locally.  
 
-🛠 Setup
-
-1. Clone the Repository
-
+### 1. Clone the Repository  
+```bash
 git clone <repo-url>
 cd <repo-folder>
+```
 
-2. Create a Virtual Environment
-
+### 2. Create a Virtual Environment  
+```bash
 python -m venv venv
+```
 
-3. Activate the Virtual Environment
+### 3. Activate the Virtual Environment  
+- **On Windows:**  
+  ```bash
+  venv\Scripts\activate
+  ```
+- **On macOS/Linux:**  
+  ```bash
+  source venv/bin/activate
+  ```
 
-On Windows:
-
-venv\Scripts\activate
-
-On macOS/Linux:
-
-source venv/bin/activate
-
-4. Install Dependencies
-
+### 4. Install Dependencies  
+```bash
 pip install -r requirements.txt
+```
 
-▶️ Run the Script
-
+## ▶️ Run the Script  
+```bash
 python main.py
+```
 
-⚠️ Important: Update Your S3 Bucket Name
-
+### ⚠️ Important: Update Your S3 Bucket Name
 Before running the script, make sure to update the S3 bucket name in the code to match your actual bucket.
+
+That's it! Your script should now be running. 🎉
 
